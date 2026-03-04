@@ -6,9 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Memory Mender | Photo Restoration</title>
+<title>Memory Mender | Professional Photo Restoration</title>
 
-<meta name="description" content="Professional photo restoration. Restore faded, torn, or damaged photos. Starting at $100.">
+<meta name="description" content="Restore damaged family photos professionally. Repair faded, torn, or old photos starting at $100.">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -90,7 +90,25 @@ border:none;
 cursor:pointer;
 }
 
-/* SECTIONS */
+/* TRUST BADGES */
+
+.trust{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.badge{
+background:white;
+padding:15px 25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+font-size:14px;
+}
+
+/* SECTION */
 
 .section{
 padding:120px 20px;
@@ -167,7 +185,7 @@ font-weight:600;
 margin:10px 0;
 }
 
-/* FORM */
+/* CONTACT */
 
 form{
 display:flex;
@@ -188,8 +206,6 @@ textarea{
 min-height:120px;
 }
 
-/* CONTACT */
-
 .contact{
 background:#2F4F6F;
 color:white;
@@ -200,7 +216,6 @@ padding:30px;
 text-align:center;
 background:#1f2f40;
 color:white;
-font-size:14px;
 }
 
 </style>
@@ -218,7 +233,7 @@ font-size:14px;
 <div class="nav-links">
 <a href="#portfolio">Portfolio</a>
 <a href="#pricing">Pricing</a>
-<a href="#upload">Upload Photo</a>
+<a href="#contact">Contact</a>
 </div>
 
 </div>
@@ -231,14 +246,14 @@ font-size:14px;
 
 <p>Professional photo restoration starting at $100</p>
 
-<button class="cta" onclick="document.getElementById('upload').scrollIntoView()">Upload Your Photo</button>
+<a href="#pricing"><button class="cta">Start Your Restoration</button></a>
 
 <div class="trust">
 
 <div class="badge">🔒 Secure Stripe Payments</div>
-<div class="badge">⭐ Satisfaction Focused</div>
-<div class="badge">🖼 Professional Restoration</div>
-<div class="badge">📦 Secure Photo Handling</div>
+<div class="badge">⭐ Professional Restoration</div>
+<div class="badge">📦 Safe Photo Handling</div>
+<div class="badge">💬 Direct Customer Support</div>
 
 </div>
 
@@ -267,28 +282,28 @@ font-size:14px;
 
 <section class="section">
 
-<h2>How Your Order Works</h2>
+<h2>How It Works</h2>
 
 <div class="process">
 
 <div class="step">
 <div class="step-number">1</div>
-Upload your damaged photo
+Choose restoration service
 </div>
 
 <div class="step">
 <div class="step-number">2</div>
-Secure payment through Stripe
+Pay securely with Stripe
 </div>
 
 <div class="step">
 <div class="step-number">3</div>
-Professional restoration begins
+Submit contact form below
 </div>
 
 <div class="step">
 <div class="step-number">4</div>
-Receive your restored photo
+Receive instructions to send photo
 </div>
 
 </div>
@@ -335,21 +350,21 @@ Receive your restored photo
 
 </section>
 
-<!-- UPLOAD -->
+<!-- CONTACT -->
 
-<section class="section contact" id="upload">
+<section class="section contact" id="contact">
 
-<h2>Upload Your Photo</h2>
+<h2>Send Your Order Details</h2>
 
-<form action="https://formspree.io/f/mvzbekyv" method="POST" enctype="multipart/form-data">
+<p>After payment, submit your email below and we will send instructions for sending your photo.</p>
+
+<form action="https://formspree.io/f/mvzbekyv" method="POST">
 
 <input type="email" name="email" placeholder="Your Email" required>
 
-<input type="file" name="photo" required>
+<textarea name="message" placeholder="Tell us about your photo and restoration needs"></textarea>
 
-<textarea name="details" placeholder="Describe the damage"></textarea>
-
-<button class="cta">Send Photo</button>
+<button class="cta">Submit Order</button>
 
 </form>
 
