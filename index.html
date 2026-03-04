@@ -1,168 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Photo Restoration by S.D. Vale</title>
+
+<title>Memory Mender | Photo Restoration</title>
+
+<meta name="description" content="Professional restoration of mildly to moderately damaged photos. Flat rate $50 per photo.">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f6f6f6;
-color:#333;
+font-family:'Inter',sans-serif;
+background:#fdf8f2;
+color:#2F4F6F;
 }
 
-header{
-background:#111;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
+html{scroll-behavior:smooth}
 
-header h1{
-margin:0;
-font-size:36px;
-}
+/* NAVBAR */
 
-header p{
-font-size:18px;
-opacity:0.9;
-}
-
-.section{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
+.navbar{
+position:fixed;
+top:0;
 width:100%;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.price-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
 background:white;
-padding:30px;
-border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:999;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:24px;
+font-weight:700;
+}
+
+.nav-links a{
+margin-left:30px;
+text-decoration:none;
+font-weight:500;
+color:#2F4F6F;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-}
-
-.price{
-font-size:42px;
-font-weight:bold;
-margin:20px 0;
-}
-
-button{
-background:#000;
+background:
+linear-gradient(rgba(20,40,60,.75),rgba(20,40,60,.75)),
+url('IMG_1711.jpeg');
+background-size:cover;
+background-position:center;
 color:white;
-padding:15px 30px;
+padding:0 20px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:54px;
+max-width:900px;
+}
+
+.hero p{
+font-size:20px;
+margin:20px 0;
+max-width:700px;
+}
+
+.cta{
+background:#F4C95D;
+color:#1f2f40;
+padding:16px 38px;
+border-radius:50px;
+font-weight:600;
 border:none;
-border-radius:6px;
-font-size:18px;
 cursor:pointer;
 }
 
-button:hover{
-background:#333;
+/* SECTION */
+
+.section{
+padding:120px 20px;
+text-align:center;
 }
 
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin-bottom:40px;
+}
+
+/* PORTFOLIO */
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.portfolio-grid img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+/* DESCRIPTION */
+
 .description{
+max-width:750px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+}
+
+/* PROCESS */
+
+.process{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.step{
 background:white;
 padding:30px;
+border-radius:16px;
+width:220px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* PRICING */
+
+.pricing-box{
+background:white;
+padding:50px;
+border-radius:20px;
+width:340px;
+margin:auto;
+box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.price{
+font-size:36px;
+font-weight:600;
+margin:20px 0;
+}
+
+/* CONTACT */
+
+form{
+display:flex;
+flex-direction:column;
+max-width:420px;
+margin:auto;
+gap:15px;
+}
+
+input,textarea{
+padding:14px;
 border-radius:10px;
-line-height:1.7;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
+border:none;
+font-family:inherit;
+}
+
+textarea{
+min-height:120px;
+}
+
+.contact{
+background:#2F4F6F;
+color:white;
 }
 
 footer{
-text-align:center;
 padding:30px;
-font-size:14px;
-color:#777;
+text-align:center;
+background:#1f2f40;
+color:white;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Professional Photo Restoration</h1>
-<p>Bring your old memories back to life</p>
-</header>
+<!-- NAVBAR -->
 
-<div class="section">
+<div class="navbar">
+
+<div class="logo">Memory Mender</div>
+
+<div class="nav-links">
+<a href="#portfolio">Portfolio</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Restore Your Family Photos</h1>
+
+<p>Professional restoration for mildly to moderately damaged photographs.</p>
+
+<a href="#pricing"><button class="cta">Start Your Restoration</button></a>
+
+</section>
+
+<!-- SERVICE DESCRIPTION -->
+
+<section class="section">
+
+<h2>Our Restoration Service</h2>
 
 <div class="description">
 
-<h2>About the Service</h2>
-
 <p>
-Each photograph is carefully restored by hand to preserve the authenticity and emotion of the original image.
+Memory Mender specializes in restoring **mild to moderately damaged photographs**. 
+This includes fading, scratches, minor tears, color correction, and improving clarity.
 </p>
 
 <p>
-This service specializes in restoring <strong>mild to moderately damaged photographs</strong>, including:
-</p>
-
-<ul>
-<li>Fading or discoloration</li>
-<li>Minor scratches or dust</li>
-<li>Small creases</li>
-<li>Color restoration</li>
-<li>General clarity improvement</li>
-</ul>
-
-<p>
-Photos with <strong>severe damage, missing sections, or major reconstruction</strong> may require a consultation before the restoration can be accepted.
-</p>
-
-<p>
-If a photo falls outside the mild-to-moderate category, you will be contacted to discuss the restoration options before work begins.
+Photos with **severe damage, missing areas, or extensive reconstruction** may require
+a consultation before restoration can be accepted. If your photo falls into this category,
+we will review the image first and discuss the best restoration options.
 </p>
 
 </div>
 
-</div>
+</section>
 
+<!-- PORTFOLIO -->
 
-<div class="section">
+<section class="section" id="portfolio">
 
-<div class="price-box">
+<h2>Restoration Portfolio</h2>
 
-<h2>Flat Rate Restoration</h2>
+<div class="portfolio-grid">
 
-<div class="price">$50 per photo</div>
-
-<p>Simple, transparent pricing. One restored photo for a flat rate.</p>
-
-<a href="https://buy.stripe.com/cNifZj7Z77sy9LCfhW93y02">
-<button>Restore My Photo</button>
-</a>
-
-</div>
-
-</div>
-
-
-<div class="section">
-
-<h2 style="text-align:center;margin-bottom:30px;">Restoration Examples</h2>
-
-<div class="gallery">
-
-<img src="IMG_1768.jpeg">
+<img src="IMG_1710.jpeg">
+<img src="IMG_1711.jpeg">
 <img src="IMG_1770.jpeg">
 <img src="IMG_1771.jpeg">
 <img src="IMG_1772.jpeg">
@@ -170,13 +270,94 @@ If a photo falls outside the mild-to-moderate category, you will be contacted to
 
 </div>
 
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section class="section">
+
+<h2>How It Works</h2>
+
+<div class="process">
+
+<div class="step">
+Choose restoration service
 </div>
+
+<div class="step">
+Pay securely online
+</div>
+
+<div class="step">
+Submit your order details
+</div>
+
+<div class="step">
+Send your photo by email
+</div>
+
+<div class="step">
+Receive your restored image
+</div>
+
+</div>
+
+</section>
+
+<!-- PRICING -->
+
+<section class="section" id="pricing">
+
+<h2>Simple Pricing</h2>
+
+<div class="pricing-box">
+
+<h3>Photo Restoration</h3>
+
+<div class="price">$50 per photo</div>
+
+<p>
+Flat-rate pricing for restoration of mildly to moderately damaged photographs.
+</p>
+
+<br>
+
+<a href="https://buy.stripe.com/cNifZj7Z77sy9LCfhW93y02" target="_blank">
+<button class="cta">Pay $50</button>
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+
+<h2>Send Your Order Details</h2>
+
+<p>
+After completing payment, submit your email below and we will send instructions for sending your photo.
+</p>
+
+<form action="https://formspree.io/f/mvzbekyv" method="POST">
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Tell us about your photo and restoration needs"></textarea>
+
+<button class="cta">Submit Order</button>
+
+</form>
+
+</section>
 
 <footer>
 
-<p>© 2026 S.D. Vale | Hand-Crafted Photo Restoration</p>
+© 2026 Memory Mender Photo Restoration
 
 </footer>
 
 </body>
+
 </html>
