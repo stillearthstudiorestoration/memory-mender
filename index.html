@@ -1,274 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Memory Mender | Professional Photo Restoration</title>
-
-<meta name="description" content="Restore damaged family photos professionally. Repair faded, torn, or old photos starting at $100.">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Photo Restoration by S.D. Vale</title>
 
 <style>
 
 body{
+font-family: Arial, sans-serif;
 margin:0;
-font-family:'Inter',sans-serif;
-background:#fdf8f2;
-color:#2F4F6F;
+background:#f6f6f6;
+color:#333;
 }
 
-html{scroll-behavior:smooth}
-
-/* NAVBAR */
-
-.navbar{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 40px;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-z-index:999;
-}
-
-.logo{
-font-family:'Playfair Display',serif;
-font-size:24px;
-font-weight:700;
-}
-
-.nav-links a{
-margin-left:30px;
-text-decoration:none;
-font-weight:500;
-color:#2F4F6F;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:
-linear-gradient(rgba(20,40,60,.75),rgba(20,40,60,.75)),
-url('IMG_1711.jpeg');
-background-size:cover;
-background-position:center;
+header{
+background:#111;
 color:white;
-padding:0 20px;
+text-align:center;
+padding:40px 20px;
 }
 
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:54px;
-max-width:900px;
+header h1{
+margin:0;
+font-size:36px;
 }
 
-.hero p{
-font-size:20px;
-margin:20px 0;
+header p{
+font-size:18px;
+opacity:0.9;
 }
-
-.cta{
-background:#F4C95D;
-color:#1f2f40;
-padding:16px 38px;
-border-radius:50px;
-font-weight:600;
-border:none;
-cursor:pointer;
-}
-
-/* TRUST BADGES */
-
-.trust{
-display:flex;
-justify-content:center;
-gap:40px;
-margin-top:30px;
-flex-wrap:wrap;
-}
-
-.badge{
-background:white;
-padding:15px 25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-font-size:14px;
-}
-
-/* SECTION */
 
 .section{
-padding:120px 20px;
-text-align:center;
-}
-
-.section h2{
-font-family:'Playfair Display',serif;
-font-size:42px;
-margin-bottom:50px;
-}
-
-/* PORTFOLIO */
-
-.portfolio-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
 max-width:1100px;
 margin:auto;
+padding:40px 20px;
 }
 
-.portfolio-grid img{
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
 width:100%;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* ORDER PROCESS */
-
-.process{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-max-width:1000px;
-margin:auto;
-}
-
-.step{
+.price-box{
 background:white;
 padding:30px;
-border-radius:16px;
-width:200px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.step-number{
-font-size:24px;
-font-weight:bold;
-margin-bottom:10px;
-}
-
-/* PRICING */
-
-.pricing-container{
-display:flex;
-flex-wrap:wrap;
-gap:40px;
-justify-content:center;
-}
-
-.pricing-box{
-background:white;
-padding:40px;
-border-radius:20px;
-width:320px;
-box-shadow:0 20px 40px rgba(0,0,0,.08);
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 .price{
-font-size:32px;
-font-weight:600;
-margin:10px 0;
+font-size:42px;
+font-weight:bold;
+margin:20px 0;
 }
 
-/* CONTACT */
-
-form{
-display:flex;
-flex-direction:column;
-max-width:420px;
-margin:auto;
-gap:15px;
-}
-
-input,textarea{
-padding:14px;
-border-radius:10px;
-border:none;
-font-family:inherit;
-}
-
-textarea{
-min-height:120px;
-}
-
-.contact{
-background:#2F4F6F;
+button{
+background:#000;
 color:white;
+padding:15px 30px;
+border:none;
+border-radius:6px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#333;
+}
+
+.description{
+background:white;
+padding:30px;
+border-radius:10px;
+line-height:1.7;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 footer{
-padding:30px;
 text-align:center;
-background:#1f2f40;
-color:white;
+padding:30px;
+font-size:14px;
+color:#777;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
+<h1>Professional Photo Restoration</h1>
+<p>Bring your old memories back to life</p>
+</header>
 
-<div class="navbar">
+<div class="section">
 
-<div class="logo">Memory Mender</div>
+<div class="description">
 
-<div class="nav-links">
-<a href="#portfolio">Portfolio</a>
-<a href="#pricing">Pricing</a>
-<a href="#contact">Contact</a>
+<h2>About the Service</h2>
+
+<p>
+Each photograph is carefully restored by hand to preserve the authenticity and emotion of the original image.
+</p>
+
+<p>
+This service specializes in restoring <strong>mild to moderately damaged photographs</strong>, including:
+</p>
+
+<ul>
+<li>Fading or discoloration</li>
+<li>Minor scratches or dust</li>
+<li>Small creases</li>
+<li>Color restoration</li>
+<li>General clarity improvement</li>
+</ul>
+
+<p>
+Photos with <strong>severe damage, missing sections, or major reconstruction</strong> may require a consultation before the restoration can be accepted.
+</p>
+
+<p>
+If a photo falls outside the mild-to-moderate category, you will be contacted to discuss the restoration options before work begins.
+</p>
+
 </div>
 
 </div>
 
-<!-- HERO -->
 
-<section class="hero">
+<div class="section">
 
-<h1>Bring Your Family Photos Back To Life</h1>
+<div class="price-box">
 
-<p>Professional photo restoration starting at $100</p>
+<h2>Flat Rate Restoration</h2>
 
-<a href="#pricing"><button class="cta">Start Your Restoration</button></a>
+<div class="price">$50 per photo</div>
 
-<div class="trust">
+<p>Simple, transparent pricing. One restored photo for a flat rate.</p>
 
-<div class="badge">🔒 Secure Stripe Payments</div>
-<div class="badge">⭐ Professional Restoration</div>
-<div class="badge">📦 Safe Photo Handling</div>
-<div class="badge">💬 Direct Customer Support</div>
+<a href="https://buy.stripe.com/cNifZj7Z77sy9LCfhW93y02">
+<button>Restore My Photo</button>
+</a>
 
 </div>
 
-</section>
+</div>
 
-<!-- PORTFOLIO -->
 
-<section class="section" id="portfolio">
+<div class="section">
 
-<h2>Restoration Portfolio</h2>
+<h2 style="text-align:center;margin-bottom:30px;">Restoration Examples</h2>
 
-<div class="portfolio-grid">
+<div class="gallery">
 
-<img src="IMG_1710.jpeg">
-<img src="IMG_1711.jpeg">
+<img src="IMG_1768.jpeg">
 <img src="IMG_1770.jpeg">
 <img src="IMG_1771.jpeg">
 <img src="IMG_1772.jpeg">
@@ -276,106 +170,13 @@ color:white;
 
 </div>
 
-</section>
-
-<!-- ORDER PROCESS -->
-
-<section class="section">
-
-<h2>How It Works</h2>
-
-<div class="process">
-
-<div class="step">
-<div class="step-number">1</div>
-Choose restoration service
 </div>
-
-<div class="step">
-<div class="step-number">2</div>
-Pay securely with Stripe
-</div>
-
-<div class="step">
-<div class="step-number">3</div>
-Submit contact form below
-</div>
-
-<div class="step">
-<div class="step-number">4</div>
-Receive instructions to send photo
-</div>
-
-</div>
-
-</section>
-
-<!-- PRICING -->
-
-<section class="section" id="pricing">
-
-<h2>Simple Pricing</h2>
-
-<div class="pricing-container">
-
-<div class="pricing-box">
-
-<h3>Single Photo Restoration</h3>
-
-<div class="price">$100</div>
-
-<p>Professional restoration of one damaged photo.</p>
-
-<a href="https://buy.stripe.com/cNifZj7Z77sy9LCfhW93y02" target="_blank">
-<button class="cta">Pay $100</button>
-</a>
-
-</div>
-
-<div class="pricing-box">
-
-<h3>Additional Photo</h3>
-
-<div class="price">$20</div>
-
-<p>Add another photo to your order.</p>
-
-<a href="https://buy.stripe.com/8x2dRbbbjbIO4rigm093y00" target="_blank">
-<button class="cta">Pay $20</button>
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section contact" id="contact">
-
-<h2>Send Your Order Details</h2>
-
-<p>After payment, submit your email below and we will send instructions for sending your photo.</p>
-
-<form action="https://formspree.io/f/mvzbekyv" method="POST">
-
-<input type="email" name="email" placeholder="Your Email" required>
-
-<textarea name="message" placeholder="Tell us about your photo and restoration needs"></textarea>
-
-<button class="cta">Submit Order</button>
-
-</form>
-
-</section>
 
 <footer>
 
-© 2026 Memory Mender Photo Restoration
+<p>© 2026 S.D. Vale | Hand-Crafted Photo Restoration</p>
 
 </footer>
 
 </body>
-
 </html>
