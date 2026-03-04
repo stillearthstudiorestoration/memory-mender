@@ -8,7 +8,7 @@
 
 <title>Memory Mender | Professional Photo Restoration</title>
 
-<meta name="description" content="Restore damaged, faded, and torn photographs professionally. Photo restoration starting at $100.">
+<meta name="description" content="Restore damaged, faded, or torn photos. Professional photo restoration starting at $100. Preserve your family memories.">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -21,7 +21,9 @@ background:#fdf8f2;
 color:#2F4F6F;
 }
 
-html{scroll-behavior:smooth}
+html{
+scroll-behavior:smooth;
+}
 
 /* NAVBAR */
 
@@ -94,7 +96,7 @@ border:none;
 cursor:pointer;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section{
 padding:120px 20px;
@@ -123,51 +125,45 @@ border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
-/* TESTIMONIALS */
+/* PRICING */
 
-.testimonial-container{
+.pricing-container{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:40px;
-max-width:1000px;
-margin:auto;
 }
-
-.testimonial{
-background:white;
-padding:35px;
-border-radius:18px;
-max-width:300px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-font-style:italic;
-}
-
-/* PRICING */
 
 .pricing-box{
 background:white;
-padding:45px;
+padding:40px;
 border-radius:25px;
-width:340px;
-margin:auto;
+width:300px;
 box-shadow:0 20px 40px rgba(0,0,0,.08);
 border:3px solid #F4C95D;
 }
 
-.pay-button{
-margin-top:20px;
-background:#635BFF;
-color:white;
-padding:16px 30px;
-border:none;
-border-radius:10px;
-font-size:16px;
-cursor:pointer;
+.price{
+font-size:28px;
+margin:15px 0;
+font-weight:600;
 }
 
-.pay-button:hover{
-background:#4F46E5;
+/* BUTTON */
+
+.pay-btn{
+display:inline-block;
+background:#2F4F6F;
+color:white;
+padding:14px 26px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+margin-top:15px;
+}
+
+.pay-btn:hover{
+background:#1c344c;
 }
 
 /* FORM */
@@ -207,6 +203,7 @@ font-size:14px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -229,7 +226,7 @@ font-size:14px;
 
 <section class="hero">
 
-<h1>Restore the Only Photo You Have Left</h1>
+<h1>Bring Your Family’s History Back to Life</h1>
 
 <p>Professional photo restoration starting at $100</p>
 
@@ -256,62 +253,41 @@ font-size:14px;
 
 </section>
 
-<!-- HOW IT WORKS -->
-
-<section class="section">
-
-<h2>How It Works</h2>
-
-<p>1. Upload your damaged photo</p>
-<p>2. We restore it professionally</p>
-<p>3. Receive a high resolution restored image</p>
-
-</section>
-
-<!-- TESTIMONIALS -->
-
-<section class="section">
-
-<h2>Client Stories</h2>
-
-<div class="testimonial-container">
-
-<div class="testimonial">
-"My grandmother cried when she saw the restored photo."
-</div>
-
-<div class="testimonial">
-"I thought the photo was lost forever."
-</div>
-
-<div class="testimonial">
-"The restoration looked brand new."
-</div>
-
-</div>
-
-</section>
-
 <!-- PRICING -->
 
 <section class="section" id="pricing">
 
 <h2>Simple Pricing</h2>
 
+<div class="pricing-container">
+
 <div class="pricing-box">
 
-<h3>Photo Restoration</h3>
+<h3>Restore 1 Photo</h3>
 
-<p>$100 first photo</p>
-<p>$20 each additional photo</p>
+<div class="price">$100</div>
 
-<p style="color:#c0392b;font-weight:600;">
-Limited restoration spots available weekly
-</p>
+<p>Professional restoration of one damaged photo.</p>
 
-<a href="https://buy.stripe.com/test_9B6eVef6Aa6veqz5u8e7m00" target="_blank">
-<button class="pay-button">Pay & Start Restoration</button>
+<a class="pay-btn" href="https://buy.stripe.com/test_9B6eVef6Aa6veqz5u8e7m00" target="_blank">
+Pay $100
 </a>
+
+</div>
+
+<div class="pricing-box">
+
+<h3>Additional Photo</h3>
+
+<div class="price">$20</div>
+
+<p>Add an additional photo restoration.</p>
+
+<a class="pay-btn" href="https://buy.stripe.com/test_3cI14o2jO6UjdmvaOse7m01" target="_blank">
+Pay $20
+</a>
+
+</div>
 
 </div>
 
