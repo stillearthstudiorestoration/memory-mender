@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,15 +8,13 @@
 
 <title>Memory Mender | Professional Photo Restoration</title>
 
-<meta name="description" content="Restore damaged, faded, or torn photographs. Professional photo restoration starting at $100. Preserve your family memories today.">
+<meta name="description" content="Professional photo restoration service. Restore damaged, faded, torn, or black and white photos. Starting at $100.">
 
-<meta name="keywords" content="photo restoration, restore old photos, repair old photographs">
+<meta name="keywords" content="photo restoration, restore old photos, repair photographs, restore family photos">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
-html{scroll-behavior:smooth;}
 
 body{
 margin:0;
@@ -23,6 +22,8 @@ font-family:'Inter',sans-serif;
 background:#fdf8f2;
 color:#2F4F6F;
 }
+
+html{scroll-behavior:smooth}
 
 /* NAVBAR */
 
@@ -52,7 +53,9 @@ font-weight:500;
 color:#2F4F6F;
 }
 
-.nav-links a:hover{color:#F4C95D}
+.nav-links a:hover{
+color:#F4C95D;
+}
 
 /* HERO */
 
@@ -65,7 +68,7 @@ align-items:center;
 text-align:center;
 background:
 linear-gradient(rgba(20,40,60,.75),rgba(20,40,60,.75)),
-url('https://raw.githubusercontent.com/stillearthstudiorestoration/memory-mender/main/IMG_1711.jpeg');
+url('IMG_1711.jpeg');
 background-size:cover;
 background-position:center;
 color:white;
@@ -74,7 +77,7 @@ padding:0 20px;
 
 .hero h1{
 font-family:'Playfair Display',serif;
-font-size:60px;
+font-size:58px;
 max-width:900px;
 }
 
@@ -103,7 +106,7 @@ text-align:center;
 .section h2{
 font-family:'Playfair Display',serif;
 font-size:42px;
-margin-bottom:40px;
+margin-bottom:50px;
 }
 
 /* PORTFOLIO */
@@ -112,7 +115,7 @@ margin-bottom:40px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:40px;
-max-width:900px;
+max-width:1100px;
 margin:auto;
 }
 
@@ -120,7 +123,7 @@ margin:auto;
 position:relative;
 overflow:hidden;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
+box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
 .comparison img{
@@ -136,7 +139,9 @@ opacity:0;
 transition:.5s;
 }
 
-.comparison:hover .after{opacity:1}
+.comparison:hover .after{
+opacity:1;
+}
 
 /* TESTIMONIALS */
 
@@ -162,9 +167,9 @@ font-style:italic;
 
 .pricing-box{
 background:white;
-padding:40px;
+padding:45px;
 border-radius:25px;
-width:300px;
+width:320px;
 margin:auto;
 box-shadow:0 20px 40px rgba(0,0,0,.08);
 border:3px solid #F4C95D;
@@ -175,7 +180,7 @@ border:3px solid #F4C95D;
 form{
 display:flex;
 flex-direction:column;
-max-width:400px;
+max-width:420px;
 margin:auto;
 gap:15px;
 }
@@ -187,7 +192,9 @@ border:none;
 font-family:inherit;
 }
 
-textarea{min-height:120px}
+textarea{
+min-height:120px;
+}
 
 /* CONTACT */
 
@@ -213,11 +220,13 @@ font-size:14px;
 
 <div class="navbar">
 <div class="logo">Memory Mender</div>
+
 <div class="nav-links">
 <a href="#portfolio">Portfolio</a>
 <a href="#pricing">Pricing</a>
 <a href="#upload">Upload Photo</a>
 </div>
+
 </div>
 
 <!-- HERO -->
@@ -230,12 +239,6 @@ font-size:14px;
 
 <button class="cta" onclick="document.getElementById('upload').scrollIntoView()">Upload Your Photo</button>
 
-<p style="margin-top:20px;font-size:14px;">
-✔ Secure photo handling  
-✔ High-resolution delivery  
-✔ Satisfaction focused
-</p>
-
 </section>
 
 <!-- PORTFOLIO -->
@@ -247,8 +250,33 @@ font-size:14px;
 <div class="portfolio-grid">
 
 <div class="comparison">
-<img src="https://raw.githubusercontent.com/stillearthstudiorestoration/memory-mender/main/IMG_1710.jpeg">
-<img class="after" src="https://raw.githubusercontent.com/stillearthstudiorestoration/memory-mender/main/IMG_1711.jpeg">
+<img src="IMG_1710.jpeg">
+<img class="after" src="IMG_1711.jpeg">
+</div>
+
+<div class="comparison">
+<img src="IMG_1769.jpeg">
+<img class="after" src="IMG_1770.jpeg">
+</div>
+
+<div class="comparison">
+<img src="IMG_1771.jpeg">
+<img class="after" src="IMG_1772.jpeg">
+</div>
+
+<div class="comparison">
+<img src="IMG_1769.jpeg">
+<img class="after" src="IMG_1770.jpeg">
+</div>
+
+<div class="comparison">
+<img src="IMG_1771.jpeg">
+<img class="after" src="IMG_1772.jpeg">
+</div>
+
+<div class="comparison">
+<img src="IMG_1710.jpeg">
+<img class="after" src="IMG_1711.jpeg">
 </div>
 
 </div>
@@ -271,20 +299,20 @@ font-size:14px;
 
 <section class="section">
 
-<h2>What Clients Say</h2>
+<h2>Client Stories</h2>
 
 <div class="testimonial-container">
 
 <div class="testimonial">
-"An incredible restoration. I cried when I saw the result."
+"My grandmother cried when she saw the restored photo."
 </div>
 
 <div class="testimonial">
-"My family thought the photo was lost forever."
+"I thought the photo was lost forever."
 </div>
 
 <div class="testimonial">
-"The restored image looks brand new."
+"The restoration looked brand new."
 </div>
 
 </div>
@@ -302,9 +330,10 @@ font-size:14px;
 <h3>Photo Restoration</h3>
 
 <p>$100 first photo</p>
+
 <p>$20 each additional photo</p>
 
-<p style="color:#c0392b;font-weight:600;">Limited restoration spots available each week</p>
+<p style="color:#c0392b;font-weight:600;">Limited restoration spots available weekly</p>
 
 </div>
 
