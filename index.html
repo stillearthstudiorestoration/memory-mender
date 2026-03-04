@@ -8,9 +8,7 @@
 
 <title>Memory Mender | Professional Photo Restoration</title>
 
-<meta name="description" content="Professional photo restoration service. Restore damaged, faded, torn, or black and white photos. Starting at $100.">
-
-<meta name="keywords" content="photo restoration, restore old photos, repair photographs, restore family photos">
+<meta name="description" content="Restore damaged, faded, and torn photographs professionally. Photo restoration starting at $100.">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -77,7 +75,7 @@ padding:0 20px;
 
 .hero h1{
 font-family:'Playfair Display',serif;
-font-size:58px;
+font-size:56px;
 max-width:900px;
 }
 
@@ -96,7 +94,7 @@ border:none;
 cursor:pointer;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section{
 padding:120px 20px;
@@ -113,34 +111,16 @@ margin-bottom:50px;
 
 .portfolio-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:40px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 max-width:1100px;
 margin:auto;
 }
 
-.comparison{
-position:relative;
-overflow:hidden;
+.portfolio-grid img{
+width:100%;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.12);
-}
-
-.comparison img{
-width:100%;
-display:block;
-}
-
-.after{
-position:absolute;
-top:0;
-left:0;
-opacity:0;
-transition:.5s;
-}
-
-.comparison:hover .after{
-opacity:1;
 }
 
 /* TESTIMONIALS */
@@ -169,10 +149,25 @@ font-style:italic;
 background:white;
 padding:45px;
 border-radius:25px;
-width:320px;
+width:340px;
 margin:auto;
 box-shadow:0 20px 40px rgba(0,0,0,.08);
 border:3px solid #F4C95D;
+}
+
+.pay-button{
+margin-top:20px;
+background:#635BFF;
+color:white;
+padding:16px 30px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+}
+
+.pay-button:hover{
+background:#4F46E5;
 }
 
 /* FORM */
@@ -219,6 +214,7 @@ font-size:14px;
 <!-- NAVBAR -->
 
 <div class="navbar">
+
 <div class="logo">Memory Mender</div>
 
 <div class="nav-links">
@@ -245,35 +241,16 @@ font-size:14px;
 
 <section class="section" id="portfolio">
 
-<h2>Before & After Restorations</h2>
+<h2>Restoration Portfolio</h2>
 
 <div class="portfolio-grid">
 
-<div class="comparison">
 <img src="IMG_1710.jpeg">
-<img class="after" src="IMG_1711.jpeg">
-</div>
-
-<div class="comparison">
-<img src="IMG_2295.jpeg">
-<img class="after" src="IMG_1770.jpeg">
-</div>
-
-<div class="comparison">
-<img src="IMG_1771.jpeg">
-<img class="after" src="IMG_1772.jpeg">
-</div>
-
-<div class="comparison">
-<img src="IMG_1772.jpeg">
-<img class="after" src="IMG_1770.jpeg">
-</div>
-
-<div class="comparison">
 <img src="IMG_1711.jpeg">
-<img class="after" src="IMG_1772.jpeg">
-</div>
-
+<img src="IMG_1770.jpeg">
+<img src="IMG_1771.jpeg">
+<img src="IMG_1772.jpeg">
+<img src="IMG_2295.jpeg">
 
 </div>
 
@@ -286,8 +263,8 @@ font-size:14px;
 <h2>How It Works</h2>
 
 <p>1. Upload your damaged photo</p>
-<p>2. We professionally restore it</p>
-<p>3. Receive your restored high-resolution image</p>
+<p>2. We restore it professionally</p>
+<p>3. Receive a high resolution restored image</p>
 
 </section>
 
@@ -326,16 +303,21 @@ font-size:14px;
 <h3>Photo Restoration</h3>
 
 <p>$100 first photo</p>
-
 <p>$20 each additional photo</p>
 
-<p style="color:#c0392b;font-weight:600;">Limited restoration spots available weekly</p>
+<p style="color:#c0392b;font-weight:600;">
+Limited restoration spots available weekly
+</p>
+
+<a href="https://buy.stripe.com/test_9B6eVef6Aa6veqz5u8e7m00" target="_blank">
+<button class="pay-button">Pay & Start Restoration</button>
+</a>
 
 </div>
 
 </section>
 
-<!-- UPLOAD FORM -->
+<!-- UPLOAD -->
 
 <section class="section contact" id="upload">
 
