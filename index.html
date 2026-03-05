@@ -62,7 +62,7 @@ align-items:center;
 text-align:center;
 background:
 linear-gradient(rgba(20,40,60,.75),rgba(20,40,60,.75)),
-url('4BDE66C3-E014-4BC8-B85E-876C57AA666A.jpeg');
+url('IMG_1711.jpeg');
 background-size:cover;
 background-position:center;
 color:white;
@@ -146,6 +146,29 @@ border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
+/* REVIEWS */
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.review{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:left;
+}
+
+.review-name{
+font-weight:600;
+margin-top:10px;
+}
+
 /* PROCESS */
 
 .process{
@@ -221,8 +244,6 @@ color:white;
 
 <body>
 
-<!-- NAVBAR -->
-
 <div class="navbar">
 
 <div class="logo">Memory Mender</div>
@@ -235,8 +256,6 @@ color:white;
 
 </div>
 
-<!-- HERO -->
-
 <section class="hero">
 
 <h1>Restore Your Family Photos</h1>
@@ -247,8 +266,6 @@ color:white;
 
 </section>
 
-<!-- SERVICE DESCRIPTION -->
-
 <section class="section">
 
 <h2>Our Restoration Service</h2>
@@ -256,18 +273,16 @@ color:white;
 <div class="description">
 
 <p>
-Memory Mender specializes in restoring **mild to moderately damaged photographs** including fading, scratches, color correction, and minor tears.
+Memory Mender specializes in restoring mild to moderately damaged photographs including fading, scratches, color correction, and minor tears.
 </p>
 
 <p>
-Photos with **severe damage, missing areas, or extensive reconstruction** may require a consultation before restoration can be accepted.
+Photos with severe damage or missing areas may require consultation before restoration can be accepted.
 </p>
 
 </div>
 
 </section>
-
-<!-- DAMAGE LEVEL GUIDE -->
 
 <section class="section">
 
@@ -276,46 +291,26 @@ Photos with **severe damage, missing areas, or extensive reconstruction** may re
 <div class="damage-grid">
 
 <div class="damage-card">
-
 <h3>Mild Damage</h3>
-
-<p>
-Small scratches, fading, dust spots, minor color issues.
-</p>
-
+<p>Small scratches, fading, dust spots.</p>
 <p><strong>Eligible for $50 restoration.</strong></p>
-
 </div>
 
 <div class="damage-card">
-
 <h3>Moderate Damage</h3>
-
-<p>
-Small tears, creases, stains, moderate fading or discoloration.
-</p>
-
+<p>Creases, small tears, stains, discoloration.</p>
 <p><strong>Eligible for $50 restoration.</strong></p>
-
 </div>
 
 <div class="damage-card">
-
 <h3>Severe Damage</h3>
-
-<p>
-Large missing areas, heavy tears, extreme deterioration.
-</p>
-
-<p><strong>Consultation required before acceptance.</strong></p>
-
+<p>Large missing areas or extensive damage.</p>
+<p><strong>Consultation required.</strong></p>
 </div>
 
 </div>
 
 </section>
-
-<!-- PORTFOLIO -->
 
 <section class="section" id="portfolio">
 
@@ -323,7 +318,7 @@ Large missing areas, heavy tears, extreme deterioration.
 
 <div class="portfolio-grid">
 
-<img src="temp_image_D73F49CD-A280-46D9-9CDB-700A5FEA7610.webp">
+<img src="IMG_1710.jpeg">
 <img src="IMG_1711.jpeg">
 <img src="IMG_1770.jpeg">
 <img src="IMG_1771.jpeg">
@@ -334,25 +329,40 @@ Large missing areas, heavy tears, extreme deterioration.
 
 </section>
 
-<!-- HOW IT WORKS -->
-
 <section class="section">
 
-<h2>How It Works</h2>
+<h2>Customer Reviews</h2>
 
-<div class="process">
+<div class="review-grid">
 
-<div class="step">Choose restoration service</div>
-<div class="step">Pay securely online</div>
-<div class="step">Submit order details</div>
-<div class="step">Send your photo by email</div>
-<div class="step">Receive restored image</div>
+<div class="review">
+<p>"I was amazed at how beautifully my grandmother's photo was restored. The detail and color were incredible."</p>
+<div class="review-name">— Stacy</div>
+</div>
+
+<div class="review">
+<p>"Memory Mender brought an old family photo back to life. It now looks like it was taken yesterday."</p>
+<div class="review-name">— Kristin</div>
+</div>
+
+<div class="review">
+<p>"The restoration was stunning. I honestly didn't think my damaged photo could be repaired."</p>
+<div class="review-name">— Helen</div>
+</div>
+
+<div class="review">
+<p>"Professional work and quick turnaround. I couldn't be happier with the results."</p>
+<div class="review-name">— Michelle</div>
+</div>
+
+<div class="review">
+<p>"Seeing the restored photo brought tears to my eyes. Thank you for preserving our family memories."</p>
+<div class="review-name">— Megan</div>
+</div>
 
 </div>
 
 </section>
-
-<!-- PRICING -->
 
 <section class="section" id="pricing">
 
@@ -364,13 +374,11 @@ Large missing areas, heavy tears, extreme deterioration.
 
 <div class="price">$50 per photo</div>
 
-<p>
-Flat-rate pricing for mild to moderate photo restoration.
-</p>
+<p>Flat-rate pricing for mild to moderate photo restoration.</p>
 
 <br>
 
-<a href=https://buy.stripe.com/4gM9AVgvD9AGe1S3ze93y03 target="_blank">
+<a href="https://buy.stripe.com/cNifZj7Z77sy9LCfhW93y02" target="_blank">
 <button class="cta">Pay $50</button>
 </a>
 
@@ -378,15 +386,11 @@ Flat-rate pricing for mild to moderate photo restoration.
 
 </section>
 
-<!-- CONTACT -->
-
 <section class="section contact" id="contact">
 
 <h2>Send Your Order Details</h2>
 
-<p>
-After completing payment, submit your email below and we will send instructions for sending your photo.
-</p>
+<p>After completing payment, submit your email below and we will send instructions for sending your photo.</p>
 
 <form action="https://formspree.io/f/mvzbekyv" method="POST">
 
